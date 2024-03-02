@@ -2,7 +2,7 @@
   "name": "connect-your-tribe-profile-card",
   "version": "0.0.1",
   "description": "Redesign je visitekaartje op basis van een bestaande API.",
-  "main": "index.ts",
+  "main": "/api/index.ts",
   "type": "module",
   "directories": {
     "doc": "docs"
