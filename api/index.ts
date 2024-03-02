@@ -4,19 +4,19 @@ import path from "path";
 
 const app = express();
 
-// Set EJS as the view engine
+// Stel ejs in als template engine
 app.set("view engine", "ejs");
+// Stel de map met ejs templates in
+app.set("views", "./views");
 
-// Set views directory
-app.set("views", path.join(__dirname, "views"));
+// Gebruik de map 'public' voor statische resources
+app.use(express.static("public"));
 
-// Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, "public")));
+// Maak een GET route voor de index
+app.get("/", function (request, response) {
 
-// Define routes
-app.get("/", (req, res) => {
-  // Render the index.ejs template
-  res.render("index");
+    response.render("index");
+
 });
 
 // Start the server
