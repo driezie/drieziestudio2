@@ -2,13 +2,13 @@
 // import fetchJson from "./helpers/fetch-json.js";
 // import bodyParser from 'body-parser'; 
 
-const express = require("express");
-const app = express();
-const fetchJson = require("./helpers/fetch-json.js");
-const bodyParser = require('body-parser');
+import express from "express";
+import fetchJson from "./helpers/fetch-json.js";
+import bodyParser from 'body-parser'; // Importing bodyParser using ES module syntax
 
 
 const apiUrl = "https://fdnd.directus.app/items";
+const app = express();
 
 // Using bodyParser middleware to parse urlencoded request bodies
 app.use(bodyParser.urlencoded({ extended: true }));
