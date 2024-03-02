@@ -1,0 +1,70 @@
+<header>
+    <div class="header-container">
+        <div class="navbar-wrapper">
+            <div class="logo">
+                <a href="https://driezie.studio">driezie studio.</a>
+            </div>
+      
+            <nav role="navigation" class="nav-menu-wrapper">
+              <ul role="list" class="nav-menu-two w-list-unstyled">
+                  <li>
+                      <a href="#pricing" class="nav-link pricing">Pricing</a>
+                  </li>
+                  <li>
+                      <a href="#about" class="nav-link pricing">About</a>
+                  </li>
+                  <li>
+                      <a href="#designs" class="nav-link pricing">Designs</a>
+                  </li>
+              </ul>
+              <div class="nav-menu-buttons">
+                  <div class="nav-btn-wrapper">
+                      <!-- <a href="https://github.com/sponsors/driezie" class="button">Support me</a> -->
+                      <a href="mailto:contact@driezie.studio" class="button knowme ">Get to know me</a>
+                  </div>
+              </div>
+            </nav>
+            <!-- mobile nav button -->
+              <button class="mobile-nav-button button">
+                  <i class="fas fa-bars"></i>
+              </button>
+      
+      
+              
+          </div>
+      
+          <nav role="navigation" class="nav-mobile-menu-wrapper">
+              <ul role="list" class="nav-menu-two w-list-unstyled">
+                  <li>
+                      <a href="#pricing" class="nav-link pricing">Pricing</a>
+                  </li>
+                  <li>
+                      <a href="#about" class="nav-link pricing">About</a>
+                  </li>
+                  <li>
+                      <a href="#designs" class="nav-link pricing">Designs</a>
+                  </li>
+              </ul>
+              <div class="nav-menu-buttons">
+                  <div class="nav-btn-wrapper">
+                      <!-- <a href="https://github.com/sponsors/driezie" class="button">Support me</a> -->
+                      <a href="mailto:contact@driezie.studio" class="button knowme ">Get to know me</a>
+                  </div>
+              </div>
+            </nav>
+    </div>
+   
+</header>
+
+
+<script>
+    // if button.mobile-nav-button is clicked give the nav-mobile-menu-wrapper a class of visible
+
+    const mobileNavButton = document.querySelector('.mobile-nav-button');
+    const mobileNavMenuWrapper = document.querySelector('.nav-mobile-menu-wrapper');
+
+    mobileNavButton.addEventListener('click', () => {
+        mobileNavMenuWrapper.classList.toggle('visible');
+    });
+
+</script>
