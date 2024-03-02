@@ -2,6 +2,9 @@ import express from "express";
 import fetchJson from "./helpers/fetch-json.js";
 import bodyParser from 'body-parser'; // Importing bodyParser using ES module syntax
 
+import { Analytics } from "@vercel/analytics/react"
+
+
 const apiUrl = "https://fdnd.directus.app/items";
 const app = express();
 
