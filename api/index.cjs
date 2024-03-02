@@ -4,11 +4,11 @@
 
 import express from "express";
 import fetchJson from "./helpers/fetch-json.js";
-import bodyParser from 'body-parser'; // Importing bodyParser using ES module syntax
+import bodyParser from 'body-parser'; 
 
+const app = express();
 
 const apiUrl = "https://fdnd.directus.app/items";
-const app = express();
 
 // Using bodyParser middleware to parse urlencoded request bodies
 app.use(bodyParser.urlencoded({ extended: true }));
