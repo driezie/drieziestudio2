@@ -2,11 +2,11 @@
 // import fetchJson from "./helpers/fetch-json.js";
 // import bodyParser from 'body-parser'; 
 
-const express = require("express");
-const app = express();
-const fetchJson = require("./helpers/fetch-json.js");
-const bodyParser = require('body-parser');
+import express from "express";
+import fetchJson from "./helpers/fetch-json.js";
+import bodyParser from 'body-parser'; 
 
+const app = express();
 
 const apiUrl = "https://fdnd.directus.app/items";
 
