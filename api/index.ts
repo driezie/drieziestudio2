@@ -1,12 +1,14 @@
-import express from "express";
-import fetchJson from "./helpers/fetch-json.js";
-import bodyParser from 'body-parser'; // Importing bodyParser using ES module syntax
+// import express from "express";
+// import fetchJson from "./helpers/fetch-json.js";
+// import bodyParser from 'body-parser'; 
 
-import { Analytics } from "@vercel/analytics/react"
+const express = require("express");
+const app = express();
+const fetchJson = require("./helpers/fetch-json.js");
+const bodyParser = require('body-parser');
 
 
 const apiUrl = "https://fdnd.directus.app/items";
-const app = express();
 
 // Using bodyParser middleware to parse urlencoded request bodies
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -153,3 +155,5 @@ app.listen(app.get("port"), function () {
   // Toon een bericht in de console en geef het poortnummer door
   console.log(`Application started on http://localhost:${app.get("port")}`);
 });
+
+module.exports = app;
