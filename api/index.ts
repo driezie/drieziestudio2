@@ -1,9 +1,26 @@
-// api/index.js
+// index.ts
 import express from "express";
+import path from "path";
+
 const app = express();
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+// Set EJS as the view engine
+app.set("view engine", "ejs");
 
-app.listen(3000, () => console.log("Server ready on port 3000."));
+// Set views directory
+app.set("views", path.join(__dirname, "views"));
 
-export default app;
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, "public")));
+
+// Define routes
+app.get("/", (req, res) => {
+  // Render the index.ejs template
+  res.render("index");
+});
+
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server ready on port ${PORT}.`);
+});
