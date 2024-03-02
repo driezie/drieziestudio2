@@ -3,8 +3,8 @@
 // import bodyParser from 'body-parser'; 
 
 import express from "express";
-import { fetchJson } from "./helpers/fetch-json.js"; // Assuming fetchJson is exported as a named export
-import bodyParser from 'body-parser'; 
+import fetchJson from "./helpers/fetch-json.js";
+import bodyParser from 'body-parser'; // Importing bodyParser using ES module syntax
 
 const app = express();
 
