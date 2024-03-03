@@ -337,9 +337,11 @@ section .section-container {
 
 
 .logo-sliding-hero {
+  max-width: 39rem;
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 1rem;
 
   /* width: 33rem; */
