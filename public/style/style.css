@@ -717,6 +717,14 @@ section h2 {
   
   }
 
+  .demo-image-wrap {
+    max-height: 250px;
+
+    img {
+      width: 100%;
+    }
+  }
+
   .pricing_grid {
     grid-template-columns: 1fr;
     grid-auto-columns: 1fr;
