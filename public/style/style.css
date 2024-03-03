@@ -717,13 +717,7 @@ section h2 {
   
   }
 
-  .demo-image-wrap {
-    max-height: 250px;
-
-    img {
-      width: 100%;
-    }
-  }
+  
 
   .pricing_grid {
     grid-template-columns: 1fr;
@@ -789,5 +783,18 @@ section h2 {
 
   h6 {
       font-size: 1.125rem
+  }
+
+  .demo-image-wrap {
+    max-height: 250px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .demo-content-wrap.uidesigns {
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
   }
 }
