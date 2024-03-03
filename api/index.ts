@@ -14,9 +14,12 @@ app.use(express.static("public"));
 
 // Maak een GET route voor de index
 app.get("/", function (request, response) {
-
     response.render("index");
+});
 
+
+app.get("/designs", function (request, response) {
+  response.render("designs");
 });
 
 // Start the server
