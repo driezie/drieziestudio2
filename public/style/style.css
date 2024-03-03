@@ -791,7 +791,7 @@ section h2 {
   }
 
   .demo-content-wrap img {
-    width: 100%;
+    width: 100% !important;
   }
 
   .demo-content-wrap.uidesigns {
