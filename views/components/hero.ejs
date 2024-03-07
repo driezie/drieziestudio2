@@ -1,0 +1,18 @@
+<section class="hero-section bg-image">
+    <div class="section-container">
+        <div class="content max-width-large">
+            <% if (title) { %>
+                <h1>
+                    <%- title %>
+                </h1>
+            <% } %>
+            <% if (description) { %>
+                <p>
+                    <%- description %>
+                </p>
+            <% } %>
+            <!-- if button is not empty -->
+            <%- include('../components/items/buttons', { buttons: buttons }) %>
+        </div>
+    </div>
+</section>

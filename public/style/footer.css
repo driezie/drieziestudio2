@@ -1,6 +1,7 @@
 
 footer {
-    background-color: var(--cool-grey--25);
+    border-top: 1px solid #e2e8f0;
+    /* background-color: var(--cool-grey--25); */
     padding-left: 10% !important;
     padding-right: 10% !important;
 }

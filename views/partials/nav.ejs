@@ -1,60 +1,224 @@
-<header>
-    <div class="header-container">
-        <div class="navbar-wrapper">
-            <div class="logo">
-                <a href="https://driezie.studio">driezie studio.</a>
+<div class="base-nav-container">
+    <header>
+        <div class="header-container">
+            <div class="navbar-wrapper">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/svg/logo.svg" alt="">
+                        driezie studio.</a>
+                </div>
+        
+                <nav role="navigation" class="nav-menu-wrapper">
+                <ul role="list" class="nav-menu-two w-list-unstyled">
+                    <!-- <li>
+                        <button id="#pricing-button" class="nav-link pricing">Pricing
+                            <img src="/svg/arrow-dropdown-down.svg" loading="lazy" alt="" class="image" style="width: 1rem; height: 1rem;">
+                        </button>
+                    </li> -->
+                    <li>
+                        <a href="/prices" class="nav-link pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="/#about" class="nav-link pricing">About</a>
+                    </li>
+                    <li>
+                        <a href="/#designs" class="nav-link pricing">Designs</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-menu-buttons">
+                    <!-- <div class="nav-btn-wrapper">
+                        <a href="https://github.com/driezie" class="github ">
+                            <img src="/svg/github.svg" loading="lazy" alt="" class="image" style="width: 1rem; height: 1rem;">
+                            <span>driezie</span>
+                        </a>
+                        <a href="https://github.com/sponsors/driezie" class="button secondary">Support me</a>
+                        <a href="/get-in-touch" class="button primary">
+                            <span>Get Started</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div> -->
+
+                    <%- include('../components/items/buttons', { buttons: 
+                        [
+                            
+                            {
+                                link: "https://github.com/driezie",
+                                style: {
+                                    type: "secondary",
+                                    link_type: "_blank",
+                                    custom: "fa-brands fa-github"
+                                },
+                                text: "driezie",
+                                icon: true,
+                            },
+                            {
+                                link: "/get-in-touch#new",
+                                style: {
+                                    type: "primary",
+                                    
+
+                                },
+                                text: "Get started",
+                                icon: true,
+                            }
+                            
+                        ]
+                            
+                         }) %>
+
+                </div>
+                </nav>
+                <!-- mobile nav button -->
+                <button class="mobile-nav-button button">
+                    <i class="fas fa-bars"></i>
+                </button>
+        
+        
+                
             </div>
+        
+            <nav role="navigation" class="nav-mobile-menu-wrapper">
+                <ul role="list" class="nav-menu-two w-list-unstyled">
+                    <li>
+                        <a href="#pricing" class="nav-link pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link pricing">About</a>
+                    </li>
+                    <li>
+                        <a href="#designs" class="nav-link pricing">Designs</a>
+                    </li>
+                </ul>
+                
+                <%- include('../components/items/buttons', { buttons: 
+                    [{
+                            link: "/get-in-touch#new",
+                            style: {
+                                type: "primary",
+                                
+
+                            },
+                            text: "Get started",
+                            icon: true,
+                        },
+                        {
+                            link: "https://github.com/driezie",
+                            style: {
+                                type: "secondary",
+                                link_type: "_blank",
+                                custom: "fa-brands fa-github"
+                            },
+                            text: "driezie", 
+                            icon: true,
+                        }]}) %>
+                </nav>
+        </div>
+    
+    </header>
+    <div class="dropdown-container" id="#pricing-model">
+        <div class="grid two-one">
+            <div class="section-1">
+                <div class="title">
+                    Our services
+                </div>
+                <ul class="grid">
+
+                    <li>
+                        <a href="#pricing" class="nav-link pricing">
+                            <span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                            <div class="content">
+                                <div class="nav-title">
+                                    Website | Basic Plan | One-pager
+                                </div>
+                                <div class="nav-description">
+                                    One pager website Ideal for small businesses and startups
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#pricing" class="nav-link pricing">
+                            <span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                            <div class="content">
+                                <div class="nav-title">
+                                    Website | Premium pack | Full-page
+                                </div>
+                                <div class="nav-description">
+                                    full-page websites for bigger businesses and startups
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#pricing" class="nav-link pricing">
+                            <span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                            <div class="content">
+                                <div class="nav-title">
+                                    Website | Custom
+                                </div>
+                                <div class="nav-description">
+                                    Can't find what you're looking for? Contact us for a custom plan
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#pricing" class="nav-link pricing">
+                            <span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                            <div class="content">
+                                <div class="nav-title">
+                                    UI Design | Basic Plan
+                                </div>
+                                <div class="nav-description">
+                                    Basic UI design for small projects
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
       
-            <nav role="navigation" class="nav-menu-wrapper">
-              <ul role="list" class="nav-menu-two w-list-unstyled">
-                  <li>
-                      <a href="#pricing" class="nav-link pricing">Pricing</a>
-                  </li>
-                  <li>
-                      <a href="#about" class="nav-link pricing">About</a>
-                  </li>
-                  <li>
-                      <a href="#designs" class="nav-link pricing">Designs</a>
-                  </li>
-              </ul>
-              <div class="nav-menu-buttons">
-                  <div class="nav-btn-wrapper">
-                      <!-- <a href="https://github.com/sponsors/driezie" class="button">Support me</a> -->
-                      <a href="mailto:contact@driezie.studio" class="button knowme ">Get to know me</a>
-                  </div>
-              </div>
-            </nav>
-            <!-- mobile nav button -->
-              <button class="mobile-nav-button button">
-                  <i class="fas fa-bars"></i>
-              </button>
-      
-      
-              
-          </div>
-      
-          <nav role="navigation" class="nav-mobile-menu-wrapper">
-              <ul role="list" class="nav-menu-two w-list-unstyled">
-                  <li>
-                      <a href="#pricing" class="nav-link pricing">Pricing</a>
-                  </li>
-                  <li>
-                      <a href="#about" class="nav-link pricing">About</a>
-                  </li>
-                  <li>
-                      <a href="#designs" class="nav-link pricing">Designs</a>
-                  </li>
-              </ul>
-              <div class="nav-menu-buttons">
-                  <div class="nav-btn-wrapper">
-                      <!-- <a href="https://github.com/sponsors/driezie" class="button">Support me</a> -->
-                      <a href="mailto:contact@driezie.studio" class="button knowme ">Get to know me</a>
-                  </div>
-              </div>
-            </nav>
+
+
+                    
+                </ul>
+            </div>
+
+            <div class="section-1">
+                <div class="title">
+                    Latest designs
+                </div>
+                <a href="" class="base-card">
+                    <div class="image" >
+                        <img src="http://localhost:3000/images/designs/small_project_2_full_page.png">
+                    </div>
+                    <div class="content" >
+                        <h3 class="heading" >
+                            <span >Bazaarblox</span>
+                        </h3>
+                        <p class="description" >A Roblox website that simulates a marketplace for Roblox models</p>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+
+    
     </div>
-   
-</header>
+</div>
+
 
 
 <script>

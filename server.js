@@ -7,7 +7,7 @@ const app = express();
 // Stel ejs in als template engine
 app.set("view engine", "ejs");
 // Set the views directory
-app.set("views", path.join(__dirname, "..", "views"));
+app.set("views", "./views");
 
 // Gebruik de map 'public' voor statische resources
 app.use(express.static("public"));
@@ -17,6 +17,13 @@ app.get("/", function (request, response) {
     response.render("index");
 });
 
+app.get("/prices", function (request, response) {
+  response.render("pricing");
+});
+
+app.get("/get-in-touch", function (request, response) {
+  response.render("contact");
+});
 
 app.get("/designs", function (request, response) {
   response.render("designs");

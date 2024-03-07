@@ -32,10 +32,21 @@
           <p>
             If you are interested in working with me, please don't hesitate to contact me.
           </p>
-          <a data-o-anonymous="1" href="/sign-up" class="button is-grey homepage w-inline-block">
-            <div>Contact me</div>
-            <img src="/svg/arrow-right.svg" loading="lazy" alt="" class="arrow-link">
-          </a>
+
+
+          <%- include('./components/items/buttons', { buttons: 
+            [
+              {
+                  link: "/get-in-touch#new",
+                  style: {
+                      type: "primary"
+                  },
+                  text: "Contact me",
+                  icon: true,
+              }
+            ]
+           }) %>
+          
         </div>
       </div>
       <div class="image-wrap">
@@ -64,10 +75,20 @@
               <div class="text-size-tiny text-weight-light">
                 Most of the designs and websites I made are for tech groups. 
               </div>
-              <a data-o-anonymous="1" href="mailto:contact@driezie.studio" class="button is-grey homepage w-inline-block">
-                <div>Contact me</div>
-                <img src="/svg/arrow-right.svg" loading="lazy" alt="" class="arrow-link">
-              </a>
+              
+
+              <%- include('./components/items/buttons', { buttons: 
+                [
+                  {
+                      link: "/get-in-touch#new",
+                      style: {
+                          type: "tertiary"
+                      },
+                      text: "Contact me",
+                      icon: true,
+                  }
+                ]
+               }) %>
             </div>
             
           </div>
@@ -90,10 +111,19 @@
               <div class="text-size-tiny text-weight-light">
                 These designs are mostly made as commissions for Roblox groups.
               </div>
-              <a data-o-anonymous="1" href="mailto:contact@driezie.studio" class="button is-grey homepage w-inline-block">
-                <div>Contact me</div>
-                <img src="/svg/arrow-right.svg" loading="lazy" alt="" class="arrow-link">
-              </a>
+              <%- include('./components/items/buttons', { buttons: 
+                [
+                  {
+                      link: "/get-in-touch#new",
+                      style: {
+                          type: "tertiary"
+                      },
+                      text: "Contact me",
+                      icon: true,
+                  }
+                ]
+               }) %>
+              
             </div>
             
           </div>
@@ -129,138 +159,6 @@
   </div>
 </section>
 
-
-<section class="component-pricing-section" id="pricing">
-  <div class="section-container">
-    <div class="section-with-price">
-      <div class="content">
-        <div class="content max-width-large">
-          <h2>
-            Pricing
-          </h2>
-          <p>
-            We do not have a fixed price for our websites. We believe that every project is unique and should be priced accordingly. We are exited to work with you and we are open to discuss the price of your project.
-          </p>
-        </div>
-      </div>
-      <div class="pricing_grid">
-        <div class="pricing-card">
-          <div class="pricing-card-top">
-            <div>Basic Plan</div>
-            <h3>One-pager</h3>
-            <p>Uniquely crafted one-page websites. This package is ideal for small businesses and startups that want to establish an online presence and showcase their products or services.</p>
-          </div>
-
-          <div class="pricing-checklist">
-            <div class="checklist-checked">
-              <img src="/svg/checked-icon.svg" loading="lazy" alt="" class="checklist-image">
-              <div>Basic styles</div>
-            </div>
-
-            <div class="checklist-checked">
-              <img src="/svg/checked-icon.svg" loading="lazy" alt="" class="checklist-image">
-              <div>Basic components</div>
-            </div>
-
-            <div class="checklist-checked">
-              <img src="/svg/checked-icon.svg" loading="lazy" alt="" class="checklist-image">
-              <div>Responsive design</div>
-            </div>
-
-            <div class="checklist-checked">
-              <img src="/svg/checked-icon.svg" loading="lazy" alt="" class="checklist-image">
-              <div>SEO optimization</div>
-            </div>
-
-            <div class="checklist-checked">
-              <img src="/svg/checked-icon.svg" loading="lazy" alt="" class="checklist-image">
-              <div>2 rounds of revisions</div>
-            </div>
-
-            <div class="checklist-checked">
-              <img src="/svg/checked-icon.svg" loading="lazy" alt="" class="checklist-image">
-              <div>Delivery in 4 weeks</div>
-            </div>
-
-            <div class="checklist-unchecked"><img src="/svg/unchecked-icon.svg" loading="lazy" alt="" class="checklist-image">
-              <div>Accessibility (WCAG)</div>
-            </div>
-          </div>
-
-          
-
-          <div class="pricing-button-wrapper">
-            <a href="mailto:contact@driezie.studio" class="button is-grey w-button">Contact me</a>
-          </div>
-        </div>
-
-        <div class="pricing-card">
-          <div class="pricing-card-top">
-            <div>Premium pack</div>
-            <h3>Full-page</h3>
-            <p>Uniquely crafted full-page websites with custom components. This package is ideal for bigger businesses and startups that want to establish an online presence and showcase their products or services.</p>
-          </div>
-
-          <div class="pricing-checklist">
-            <div class="checklist-checked">
-              <img src="/svg/checked-icon.svg" loading="lazy" alt="" class="checklist-image">
-              <div>Advanced styles</div>
-            </div>
-
-            <div class="checklist-checked">
-              <img src="/svg/checked-icon.svg" loading="lazy" alt="" class="checklist-image">
-              <div>Advanced components</div>
-            </div>
-
-            <div class="checklist-checked">
-              <img src="/svg/checked-icon.svg" loading="lazy" alt="" class="checklist-image">
-              <div>Responsive design</div>
-            </div>
-
-            <div class="checklist-checked">
-              <img src="/svg/checked-icon.svg" loading="lazy" alt="" class="checklist-image">
-              <div>SEO optimization</div>
-            </div>
-            
-
-            <div class="checklist-checked">
-              <img src="/svg/checked-icon.svg" loading="lazy" alt="" class="checklist-image">
-              <div>Accessibility (WCAG)</div>
-            </div>
-
-            <div class="checklist-checked">
-              <img src="/svg/checked-icon.svg" loading="lazy" alt="" class="checklist-image">
-              <div>5 to 10 rounds of revisions</div>
-            </div>
-
-            <div class="checklist-checked">
-              <img src="/svg/checked-icon.svg" loading="lazy" alt="" class="checklist-image">
-              <div>Delivery in 8 weeks</div>
-            </div>
-          </div>
-
-        
-          <div class="pricing-button-wrapper">
-            <a href="mailto:contact@driezie.studio" class="button is-grey w-button">Contact me</a>
-          </div>
-        </div>
-
-        <div class="pricing-card">
-          <div class="pricing-card-top">
-            <h3>Custom</h3>
-            <p>Can't find what you're looking for? We can provide you with a custom package designed specifically to meet your unique requirements and preferences.</p>
-          </div>
-
-          <div class="pricing-button-wrapper">
-            <a href="mailto:contact@driezie.studio" class="button is-grey w-button">Contact me</a>
-          </div>
-        </div>
-        
-      </div>
-      
-    </div>
-  </div>
-</section>
 
 <section class="component-roadmap-section" id="roadmap">
   <div class="section-container">
@@ -346,10 +244,18 @@
         </h3>
         <p class="discord-text">You can add me on discord via <b>@driezie</b> and we can talk about your project. I am always open to new projects and I am exited to work with you.</p>
         </p>
-        <a href="https://discord.com/users/852000000000000000" class="button is-grey homepage w-inline-block">
-          <div>Contact me</div>
-          <img src="/svg/arrow-right.svg" loading="lazy" alt="" class="arrow-link">
-        </a>
+        <%- include('./components/items/buttons', { buttons: 
+          [
+            {
+                link: "/get-in-touch#new",
+                style: {
+                    type: "tertiary"
+                },
+                text: "Contact me",
+                icon: false,
+            }
+          ]
+         }) %>
       </div>
     </div>
   </div>

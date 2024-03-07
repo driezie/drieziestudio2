@@ -1,0 +1,115 @@
+<style>
+    form {
+        line-height: 1.25rem;
+        gap: 1rem;
+    }
+
+    form * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input, textarea {
+        border: 1px solid #e2e8f0;
+        border-radius: .5rem;
+        inline-size: 100%;
+        margin-block-start: .5rem;
+        padding: .75rem;
+        transition: .15s cubic-bezier(0,0,.2,1);
+        width: 100% !important;
+    }
+
+    ul.error-messages {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+            color: #dd3f53;
+            font-style: italic;
+            font-size: .75rem;
+            line-height: 1rem;
+        }
+    }
+
+    select {
+        position: relative;
+        border: 1px solid #e2e8f0;
+        border-radius: .5rem;
+        inline-size: 100%;
+        margin-block-start: .5rem;
+        padding: .75rem;
+        transition: .15s cubic-bezier(0,0,.2,1);
+        width: 100% !important;
+    }
+
+    select:after {
+        content: url(https://api.iconify.design/material-symbols/expand-more.svg);
+        display: inline-block;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        inset-block-start: 1.25rem;
+        inset-inline-end: .5rem;
+        letter-spacing: normal;
+        line-height: 1;
+        position: absolute;
+        text-transform: none;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+
+        -webkit-font-smoothing: antialiased;
+        color: #64748b;
+        pointer-events: none;
+    }
+</style>
+
+
+<section class="component-normal-section">
+    <div class="section-container">
+        <form action="" method="post">
+            <fieldset class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" value="">
+                <ul class="error-messages">
+                    <li>Required</li>
+                </ul>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" value="">
+                <ul class="error-messages">
+                    <li>Required</li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="name">Name</label>
+                <select id="name" name="name" class="form-control">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <ul class="error-messages">
+                    <li>Required</li>
+                </ul>
+            </fieldset>
+            
+            <fieldset class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="form-control"></textarea>
+            </fieldset>
+            <div class="buttons">
+                <button type="submit" class="button primary">Submit</button>
+            </div>
+        </form>
+        
+    </div>
+</section>
+
