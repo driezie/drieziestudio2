@@ -1,13 +1,12 @@
 
 footer {
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid var(--border-color);
     /* background-color: var(--cool-grey--25); */
     padding-left: 10% !important;
     padding-right: 10% !important;
 }
 
 .section-container {
-    color: var(--cool-grey--900);
     padding-top: 7rem;
     padding-bottom: 7rem;
     position: relative;
@@ -62,7 +61,6 @@ footer {
     margin-bottom: 0.5rem;
     font-size: 2rem;
     line-height: 1.3;
-    color: var(--cool-grey--900);
 }
 
 .footer-grid .item1 {
@@ -83,12 +81,8 @@ footer {
     align-items: center;
     gap: 1rem;
     padding-left: 0;
-    /* padding: 20px 0; */
-
     i {
-        font-size: 1.5rem;
-        color: var(--cool-grey--900);
-    
+        font-size: 1.5rem;    
     }
 }
 
@@ -97,7 +91,6 @@ footer {
 }
 
 footer .list-item h4 {
-    color: var(--cool-grey--900);
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -116,7 +109,6 @@ footer .list-item ul {
 
     & a {
         padding: 0.7rem;
-        color: var(--cool-grey--900);
         font-size: 1rem;
         font-style: normal;
         font-weight: 400;
@@ -147,7 +139,6 @@ footer .list-item ul {
     }
 
     a {
-        color: var(--cool-grey--900);
         text-decoration: underline;
     }
 }

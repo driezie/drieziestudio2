@@ -10,16 +10,11 @@
         
                 <nav role="navigation" class="nav-menu-wrapper">
                 <ul role="list" class="nav-menu-two w-list-unstyled">
-                    <!-- <li>
-                        <button id="#pricing-button" class="nav-link pricing">Pricing
-                            <img src="/svg/arrow-dropdown-down.svg" loading="lazy" alt="" class="image" style="width: 1rem; height: 1rem;">
-                        </button>
-                    </li> -->
                     <li>
-                        <a href="/prices" class="nav-link pricing">Pricing</a>
+                        <a href="/prices" class="nav-link pricing">Dashboard</a>
                     </li>
                     <li>
-                        <a href="/#about" class="nav-link pricing">About</a>
+                        <a href="/#about" class="nav-link pricing">Products</a>
                     </li>
                     <li>
                         <a href="/#designs" class="nav-link pricing">Designs</a>
@@ -39,7 +34,7 @@
                         </a>
                     </div> -->
 
-                    <%- include('../components/items/buttons', { buttons: 
+                    <%- include('../../components/items/buttons', { buttons: 
                         [
                             
                             {
@@ -81,7 +76,7 @@
             <nav role="navigation" class="nav-mobile-menu-wrapper">
                 <ul role="list" class="nav-menu-two w-list-unstyled">
                     <li>
-                        <a href="/prices" class="nav-link pricing">Pricing</a>
+                        <a href="#pricing" class="nav-link pricing">Pricing</a>
                     </li>
                     <li>
                         <a href="#about" class="nav-link pricing">About</a>
@@ -91,15 +86,15 @@
                     </li>
                 </ul>
                 
-                <%- include('../components/items/buttons', { buttons: 
+                <%- include('../../components/items/buttons', { buttons: 
                     [{
-                            link: "mailto:contact@driezie.studio",
+                            link: "/get-in-touch#new",
                             style: {
                                 type: "primary",
                                 
 
                             },
-                            text: "Contact me",
+                            text: "Get started",
                             icon: true,
                         },
                         {
